@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle Vehículo 12</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Detalle del Vehículo</h1>
+
+  <ul>
+    <li><strong>ID:</strong> <%= vehiculo.ID_VEHICULO_12 %></li>
+    <li><strong>Marca:</strong> <%= vehiculo.MARCA_12 %></li>
+    <li><strong>Modelo:</strong> <%= vehiculo.MODELO_12 %></li>
+    <li><strong>Precio:</strong> Q<%= vehiculo.PRECIO_12 %></li>
+    <li><strong>Cantidad:</strong> <%= vehiculo.CANTIDAD_12 %></li>
+  </ul>
+
+  <p>
+    <a href="/vehiculo12">Regresar al listado</a> |
+    <a href="/vehiculo12/<%= vehiculo.ID_VEHICULO_12 %>/editar">Editar</a>
+  </p>
+</body>
+</html>

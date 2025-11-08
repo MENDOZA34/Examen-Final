@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title><%= titulo %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1><%= titulo %></h1>
+
+  <form action="<%= accion %>" method="<%= metodo %>">
+    <label>Marca:</label>
+    <input type="text" name="marca" required
+           value="<%= vehiculo.MARCA_12 || '' %>">
+
+    <label>Modelo:</label>
+    <input type="text" name="modelo" required
+           value="<%= vehiculo.MODELO_12 || '' %>">
+
+    <label>Precio:</label>
+    <input type="number" step="0.01" name="precio" required
+           value="<%= vehiculo.PRECIO_12 || '' %>">
+
+    <label>Cantidad:</label>
+    <input type="number" name="cantidad" required
+           value="<%= vehiculo.CANTIDAD_12 || '' %>">
+
+    <button type="submit"><%= boton %></button>
+  </form>
+
+  <p><a href="/vehiculo12">Regresar al listado</a></p>
+</body>
+</html>
